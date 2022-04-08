@@ -1,0 +1,24 @@
+body{
+    background: linear-gradient(#d1b1ff,#acdcff,#ffcbf2 );
+}
+#score{
+    font-size: large;
+    margin-left: -1500px;
+    color: #f20089;
+}
+#timer{
+    font-size: large;
+    margin-right: -1200px;
+    color: #f20089;
+}
+#instsketch{
+    font-size: large;
+    color: #480ca8;
+}
+p{
+    font-size: larger;
+    color: #e86252;
+}
+h1{
+    color:blueviolet;
+}
