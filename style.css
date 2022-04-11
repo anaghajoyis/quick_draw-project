@@ -3,12 +3,14 @@ body{
 }
 #score{
     font-size: large;
-    margin-left: -1500px;
+    float: left;
+    margin: 10px;
     color: #f20089;
 }
 #timer{
     font-size: large;
-    margin-right: -1200px;
+    float: right;
+    margin-right: 75px;
     color: #f20089;
 }
 #instsketch{
@@ -21,4 +23,25 @@ p{
 }
 h1{
     color:blueviolet;
+}
+canvas{
+    border: 10px solid white;
+    border-radius: 10px;
+    animation-name: example;
+    animation-duration: 5s;
+    margin-top: 15px;
+    animation-iteration-count: infinite;
+}
+@keyframes example {
+    from {box-shadow: 1px 1px 40px #ff0000;}
+    10%{box-shadow: 1px 1px 40px #fc9803;}
+    20%{box-shadow: 1px 1px 40px #f2ff00;}
+    30%{box-shadow: 1px 1px 40px #51ff00;}
+    40%{box-shadow: 1px 1px 40px #00ffcc;}
+    50%{box-shadow: 1px 1px 40px #0026ff;}
+    60%{box-shadow: 1px 1px 40px #00ffcc;}
+    70%{box-shadow: 1px 1px 40px #51ff00;}
+    80%{box-shadow: 1px 1px 40px #f2ff00;}
+    90%{box-shadow: 1px 1px 40px #fc9803;}
+    to {box-shadow: 1px 1px 40px #ff0000;}
 }

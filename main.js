@@ -9,3 +9,44 @@ var time_check = ""
 var drawn_sketch = ""
 var answer_holder = ""
 var score= 0
+function setup(){
+    canvas = createCanvas(280,280);
+    canvas.position(500,300);
+    background("white");
+}
+function preload(){
+
+}
+function draw(){
+createSketch();
+if (drawn_sketch==sketch){
+    answer_holder="set";
+    score=score+1;
+    document.getElementById("score").innerHTML="Score: "+score;
+}
+}
+function createSketch(){
+    time_counter=time_counter+1;
+    document.getElementById("timer").innerHTML="Timer: "+time_counter;
+    console.log(time_counter);
+    if (time_counter>400){
+        time_counter=0;
+        time_check="completed";
+    }
+    if (time_check=="completed"){
+        time_check="";
+        answer_holder="";
+        updateCanvas();
+    }
+}
+function updateCanvas(){
+    background("white");
+    random_no = Math.floor((Math.random()*quick_draw_data_set.length)+1);
+    sketch = quick_draw_data_set[random_no];
+    console.log(random_no);
+    console.log(sketch);
+    document.getElementById("instsketch").innerHTML="Sketch to be drawn: "+sketch;
+}
+function clearCanvas(){
+    background('white');
+}
