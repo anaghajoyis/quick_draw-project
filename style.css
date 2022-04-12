@@ -1,47 +1,41 @@
+label{
+    font-size:25px;
+}
 body{
-    background: linear-gradient(#d1b1ff,#acdcff,#ffcbf2 );
-}
-#score{
-    font-size: large;
-    float: left;
-    margin: 10px;
-    color: #f20089;
-}
-#timer{
-    font-size: large;
-    float: right;
-    margin-right: 75px;
-    color: #f20089;
-}
-#instsketch{
-    font-size: large;
-    color: #480ca8;
-}
-p{
-    font-size: larger;
-    color: #e86252;
+    background-color: #c4c7ff;
 }
 h1{
-    color:blueviolet;
+    font-family: 'Beau Rivage', cursive;
+    font-weight: bold;
+    font-size: 50px;
+    background-color: #ff85fb;
+    color: #ec0868;
+    padding-bottom: 5px;
+}
+#showsketch{
+    color: #3e016f;
+    font-size: 25px;
+    float: right;
+    margin: 5px;
+    border-color: white;
+    border: solid;
+}
+label{
+    padding: 5px;
+    font-family: 'Rubik Microbe', cursive;
+}
+#clear{
+    margin-top: 15px ;
 }
 canvas{
     border: 10px solid white;
     border-radius: 10px;
     animation-name: example;
-    animation-duration: 5s;
+    animation-duration: 4s;
     margin-top: 15px;
     animation-iteration-count: infinite;
 }
 @keyframes example {
     from {box-shadow: 1px 1px 40px #ff0000;}
-    10%{box-shadow: 1px 1px 40px #fc9803;}
-    20%{box-shadow: 1px 1px 40px #f2ff00;}
-    30%{box-shadow: 1px 1px 40px #51ff00;}
-    40%{box-shadow: 1px 1px 40px #00ffcc;}
-    50%{box-shadow: 1px 1px 40px #0026ff;}
-    60%{box-shadow: 1px 1px 40px #00ffcc;}
-    70%{box-shadow: 1px 1px 40px #51ff00;}
-    80%{box-shadow: 1px 1px 40px #f2ff00;}
-    90%{box-shadow: 1px 1px 40px #fc9803;}
-    to {box-shadow: 1px 1px 40px #ff0000;}
+    to {box-shadow: 1px 1px 40px #0026ff;}
 }
